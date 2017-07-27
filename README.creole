@@ -1,3 +1,11 @@
 = UNOFFICIAL fork of gcolor2 =
 
-0.4 (2005-07-12) from: https://sourceforge.net/projects/gcolor2/files/gcolor2/
+== VERSIONS ==
+
+* 0.4
+** [[https://gitlab.com/krayon/gcolor2/tags/0.4|GitLab]]
+** [[https://github.com/krayon/gcolor2/releases/tag/0.4|GitHub]]
+
+== HISTORY ==
+
+Original 0.4 (2005-07-12) from: https://sourceforge.net/projects/gcolor2/files/gcolor2/
