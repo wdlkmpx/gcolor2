@@ -52,8 +52,6 @@ gchar* get_system_file ()
 
 void add_list_color (gchar *spec, gchar *name, gchar *type, gboolean is_new_color)
 {
-	GdkPixmap   *pixmap;
-	GdkBitmap   *mask;
 	GdkPixbuf   *buf;
 	GtkTreeIter  iter;
 	
@@ -107,7 +105,7 @@ void add_rgb_file (gchar *filename, gchar *type)
 	gchar *name;
 	gchar  buffer[512];
 	gchar  spec[8];
-	gint   r, g, b, lr, lg, lb;
+	gint   r, g, b, lr=0, lg=0, lb=0;
 	
 	fp = fopen (filename, "r");
 	if (!fp)
@@ -144,7 +142,6 @@ gint main (gint argc, gchar *argv[])
 	GtkTreeViewColumn *column;
 	GtkWidget         *treeview;
 	GtkTreeSelection  *select;
-	gchar             *buf;
 	
 #ifdef ENABLE_NLS
 	bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
