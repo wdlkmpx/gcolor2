@@ -1,0 +1,3 @@
+= UNOFFICIAL fork of gcolor2 =
+
+0.4 (2005-07-12) from: https://sourceforge.net/projects/gcolor2/files/gcolor2/
