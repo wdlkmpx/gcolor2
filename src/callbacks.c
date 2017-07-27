@@ -4,6 +4,9 @@
 
 #include <gtk/gtk.h>
 #include <stdio.h>
+#include <string.h>
+#include <glib.h>
+#include <glib/gprintf.h>
 
 #include "callbacks.h"
 #include "interface.h"
@@ -172,6 +175,9 @@ void on_copy_color_to_clipboard_activate (GtkMenuItem *menuitem, gpointer user_d
 	gtk_clipboard_set_text (cb, hex, strlen (hex));
 }
 
+void add_rgb_file (gchar *filename, gchar *type);
+gchar* get_system_file (void);
+
 void on_show_system_colors_activate (GtkMenuItem *menuitem, gpointer user_data)
 {
 	if (gtk_check_menu_item_get_active (GTK_CHECK_MENU_ITEM (menuitem)))
@@ -265,6 +271,8 @@ void on_save_button_clicked (GtkButton *button, gpointer user_data)
 	}
 	gtk_widget_destroy (savedialog);
 }
+
+void add_list_color (gchar *spec, gchar *name, gchar *type, gboolean is_new_color);
 
 void add_color_to_treeview ()
 {

@@ -4,6 +4,10 @@
 
 #include <gtk/gtk.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <glib.h>
+#include <glib/gprintf.h>
 
 #include "interface.h"
 #include "support.h"
