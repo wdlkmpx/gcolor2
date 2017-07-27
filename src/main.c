@@ -165,7 +165,7 @@ gint main (gint argc, gchar *argv[])
 	gtk_tree_view_set_model (GTK_TREE_VIEW (treeview), GTK_TREE_MODEL (liststore));
 	
 	column = gtk_tree_view_column_new ();
-	gtk_tree_view_column_set_title (column, "Color");
+	gtk_tree_view_column_set_title (column, _("Color"));
 	
 	renderer = gtk_cell_renderer_pixbuf_new ();
 	gtk_tree_view_column_pack_start (column, renderer, FALSE);
@@ -180,7 +180,7 @@ gint main (gint argc, gchar *argv[])
 	
 	
 	renderer = gtk_cell_renderer_text_new ();
-	column = gtk_tree_view_column_new_with_attributes ("Name", renderer,
+	column = gtk_tree_view_column_new_with_attributes (_("Name"), renderer,
 													   "text", COLOR_NAME, NULL);
 	gtk_tree_view_column_set_sort_column_id (column, COLOR_NAME);
 	gtk_tree_view_append_column (GTK_TREE_VIEW (treeview), column);
