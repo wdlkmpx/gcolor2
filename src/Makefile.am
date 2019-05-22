@@ -2,7 +2,7 @@
 
 AM_CPPFLAGS = \
 	-DPACKAGE_DATA_DIR=\""$(datadir)"\" \
-	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
+	-DPACKAGE_LOCALE_DIR=\""$(prefix)/share/locale"\" \
 	@PACKAGE_CFLAGS@
 
 bin_PROGRAMS = gcolor2
