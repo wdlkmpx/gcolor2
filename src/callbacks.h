@@ -12,6 +12,7 @@
 #define SYSTEM_FILE_2      "/usr/lib/X11/rgb.txt"
 #define SYSTEM_FILE_3      "/etc/X11/rgb.txt"
 #define SYSTEM_FILE_4      "/usr/openwin/lib/X11/rgb.txt"
+#define SYSTEM_FILE_5      "/usr/share/X11/rgb.txt"
 
 /* about dialog text */
 #define ABOUT_CREDITS_TEXT "Developer:\n" \

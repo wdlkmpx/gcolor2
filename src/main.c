@@ -40,6 +40,8 @@ gboolean set_system_file ()
 		sys_filename = SYSTEM_FILE_3;
 	else if (g_file_test (SYSTEM_FILE_4, G_FILE_TEST_EXISTS))
 		sys_filename = SYSTEM_FILE_4;
+	else if (g_file_test (SYSTEM_FILE_5, G_FILE_TEST_EXISTS))
+		sys_filename = SYSTEM_FILE_5;
 	else
 		return FALSE;
 	return TRUE;
